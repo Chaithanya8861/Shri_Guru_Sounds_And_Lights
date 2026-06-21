@@ -1,0 +1,726 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sri Guru Sounds & Lights | Premium Event Sound & Lighting</title>
+  <!-- Font Awesome 6 -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;400;600;700;800&family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <style>
+    /* ---------- RESET & BASE ---------- */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Inter', sans-serif;
+      background-color: #0b0c15;
+      color: #f0f3fa;
+      line-height: 1.5;
+      scroll-behavior: smooth;
+    }
+
+    ::-webkit-scrollbar {
+      width: 8px;
+    }
+    ::-webkit-scrollbar-track {
+      background: #1e1f2c;
+    }
+    ::-webkit-scrollbar-thumb {
+      background: #f25e2c;
+      border-radius: 10px;
+    }
+
+    .container {
+      max-width: 1280px;
+      margin: 0 auto;
+      padding: 0 2rem;
+    }
+
+    /* ---------- BUTTONS ---------- */
+    .btn-primary {
+      display: inline-block;
+      background: linear-gradient(95deg, #f25e2c, #ff8c42);
+      border: none;
+      padding: 1rem 2.2rem;
+      font-weight: 700;
+      font-size: 1.1rem;
+      border-radius: 50px;
+      color: #fff;
+      margin-top: 2rem;
+      transition: 0.3s;
+      cursor: pointer;
+      box-shadow: 0 8px 20px rgba(242, 94, 44, 0.3);
+      text-decoration: none;
+    }
+
+    .btn-primary:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 14px 28px rgba(242, 94, 44, 0.4);
+      background: linear-gradient(95deg, #ff6a30, #ffa043);
+    }
+
+    .section-title {
+      font-size: 2.2rem;
+      font-weight: 700;
+      font-family: 'Poppins', sans-serif;
+      text-align: center;
+      margin-bottom: 3rem;
+    }
+    .section-title span {
+      background: linear-gradient(120deg, #f25e2c, #ffbc7a);
+      background-clip: text;
+      -webkit-background-clip: text;
+      color: transparent;
+    }
+
+    section {
+      padding: 5rem 0;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+    }
+
+    /* ---------- NAVBAR ---------- */
+    .navbar {
+      background: rgba(11, 12, 21, 0.95);
+      backdrop-filter: blur(12px);
+      padding: 1rem 2rem;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 1rem;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      border-bottom: 1px solid rgba(242, 94, 44, 0.3);
+    }
+
+    .logo-area {
+      display: flex;
+      align-items: center;
+      gap: 0.75rem;
+    }
+
+    /* -------- LOGO IMAGE STYLES -------- */
+    .logo-icon {
+      width: 48px;
+      height: 48px;
+      border-radius: 14px;
+      overflow: hidden;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: #1a1b26;
+      border: 1px solid #2c2e40;
+    }
+
+    .logo-icon img {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+      display: block;
+      padding: 4px;
+    }
+
+    .logo-text {
+      font-size: 1.6rem;
+      font-weight: 800;
+      font-family: 'Poppins', sans-serif;
+      background: linear-gradient(to right, #ffffff, #ffbc7a);
+      background-clip: text;
+      -webkit-background-clip: text;
+      color: transparent;
+      letter-spacing: -0.3px;
+    }
+
+    .nav-links {
+      display: flex;
+      gap: 2rem;
+      list-style: none;
+      flex-wrap: wrap;
+    }
+
+    .nav-links a {
+      color: #eef2ff;
+      text-decoration: none;
+      font-weight: 600;
+      transition: 0.3s;
+      font-size: 1rem;
+    }
+    .nav-links a:hover,
+    .nav-links a.active {
+      color: #f25e2c;
+    }
+
+    .nav-contact {
+      background: rgba(242, 94, 44, 0.2);
+      padding: 0.5rem 1rem;
+      border-radius: 40px;
+      font-weight: 700;
+      font-size: 0.9rem;
+      border: 1px solid rgba(242, 94, 44, 0.5);
+    }
+
+    /* ---------- HERO ---------- */
+    .hero {
+      padding: 5rem 0;
+      text-align: center;
+      background: radial-gradient(circle at 70% 20%, rgba(242, 94, 44, 0.08), transparent 70%);
+    }
+
+    .hero-logo {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 1rem;
+      background: rgba(255, 255, 255, 0.03);
+      backdrop-filter: blur(8px);
+      padding: 0.8rem 2.2rem;
+      border-radius: 80px;
+      margin-bottom: 1.5rem;
+      border: 1px solid rgba(242, 94, 44, 0.25);
+    }
+
+    .hero-logo-img {
+      width: 60px;
+      height: 60px;
+      border-radius: 16px;
+      overflow: hidden;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: #1a1b26;
+      border: 1px solid #2c2e40;
+    }
+
+    .hero-logo-img img {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+      display: block;
+      padding: 4px;
+    }
+
+    .hero-logo span {
+      font-size: 2rem;
+      font-weight: 800;
+      font-family: 'Poppins', sans-serif;
+      background: linear-gradient(135deg, #fff, #ffb471);
+      background-clip: text;
+      -webkit-background-clip: text;
+      color: transparent;
+    }
+
+    .hero h1 {
+      font-size: 3.2rem;
+      font-weight: 800;
+      font-family: 'Poppins', sans-serif;
+      margin-bottom: 0.5rem;
+      line-height: 1.2;
+    }
+
+    .hero .tagline {
+      font-size: 1.3rem;
+      color: #cfd9ff;
+      margin-bottom: 0.5rem;
+      max-width: 700px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    /* Service area badge */
+    .service-area-badge {
+      display: inline-block;
+      background: rgba(242, 94, 44, 0.15);
+      border: 1px solid rgba(242, 94, 44, 0.3);
+      padding: 0.4rem 1.5rem;
+      border-radius: 40px;
+      font-size: 1rem;
+      font-weight: 600;
+      color: #ffbc7a;
+      margin-bottom: 1.5rem;
+      letter-spacing: 0.5px;
+    }
+    .service-area-badge i {
+      color: #f25e2c;
+      margin-right: 8px;
+    }
+
+    .hero-contact-badge {
+      background: #1f212e;
+      display: inline-flex;
+      align-items: center;
+      gap: 1.2rem;
+      flex-wrap: wrap;
+      justify-content: center;
+      padding: 0.8rem 2rem;
+      border-radius: 60px;
+      margin-top: 0.5rem;
+      border: 1px solid #2c2e40;
+    }
+
+    .hero-contact-badge a {
+      color: #fff;
+      text-decoration: none;
+      font-weight: 600;
+      font-size: 1.1rem;
+      transition: 0.2s;
+    }
+    .hero-contact-badge a i {
+      color: #f25e2c;
+      margin-right: 8px;
+    }
+    .hero-contact-badge a:hover {
+      color: #f25e2c;
+    }
+
+    /* ---------- SERVICES ---------- */
+    .services-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 2rem;
+      margin-top: 1rem;
+    }
+
+    .service-card {
+      background: #12131e;
+      padding: 2rem 1.5rem;
+      border-radius: 28px;
+      transition: 0.3s;
+      text-align: center;
+      border: 1px solid #232536;
+    }
+    .service-card:hover {
+      transform: translateY(-8px);
+      border-color: #f25e2c;
+      box-shadow: 0 20px 30px -12px rgba(242, 94, 44, 0.2);
+    }
+    .service-card i {
+      font-size: 2.8rem;
+      color: #f25e2c;
+      margin-bottom: 1.2rem;
+    }
+    .service-card h3 {
+      font-size: 1.4rem;
+      margin-bottom: 0.8rem;
+    }
+    .service-card p {
+      color: #b9c2e0;
+    }
+
+    /* ---------- GALLERY (EVENT PHOTOS) ---------- */
+    .gallery-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+      gap: 2rem;
+    }
+
+    .gallery-item {
+      border-radius: 24px;
+      overflow: hidden;
+      background: #10111c;
+      transition: 0.3s;
+      box-shadow: 0 12px 18px -10px rgba(0, 0, 0, 0.5);
+      border: 1px solid #1e1f2c;
+    }
+    .gallery-item:hover {
+      transform: translateY(-6px);
+      box-shadow: 0 20px 28px -12px rgba(242, 94, 44, 0.25);
+      border-color: #f25e2c;
+    }
+
+    .gallery-item img {
+      width: 100%;
+      height: 280px;
+      object-fit: cover;
+      display: block;
+    }
+
+    .gallery-caption {
+      padding: 1rem;
+      text-align: center;
+      font-weight: 700;
+      background: #0e0f18;
+      color: #f0eefc;
+      font-size: 1rem;
+    }
+    .gallery-caption i {
+      color: #f25e2c;
+      margin-right: 6px;
+    }
+
+    /* ---------- CONTACT ---------- */
+    .about-contact-wrap {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 3rem;
+      background: #0c0d17;
+      border-radius: 40px;
+      padding: 2.5rem;
+      margin-top: 1rem;
+    }
+    .about-text {
+      flex: 1.5;
+    }
+    .contact-card {
+      flex: 1;
+      background: #12131e;
+      padding: 2rem;
+      border-radius: 28px;
+      border-left: 4px solid #f25e2c;
+    }
+    .contact-card h3 {
+      font-size: 1.7rem;
+      margin-bottom: 1rem;
+    }
+    .contact-detail {
+      margin: 1.5rem 0;
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+      font-size: 1.1rem;
+    }
+    .contact-detail i {
+      width: 40px;
+      height: 40px;
+      background: #1f212e;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 60px;
+      color: #f25e2c;
+      font-size: 1.2rem;
+    }
+    .social-links a {
+      color: #ccd6f6;
+      font-size: 1.6rem;
+      margin-right: 1.2rem;
+      transition: 0.2s;
+    }
+    .social-links a:hover {
+      color: #f25e2c;
+    }
+
+    /* ---------- FOOTER ---------- */
+    .footer {
+      background: #06070e;
+      text-align: center;
+      padding: 2rem;
+      font-size: 0.9rem;
+      color: #9aa1bf;
+      border-top: 1px solid #1f212e;
+    }
+    .footer a {
+      color: #f25e2c;
+      text-decoration: none;
+    }
+
+    /* ---------- RESPONSIVE ---------- */
+    @media (max-width: 850px) {
+      .navbar {
+        flex-direction: column;
+        text-align: center;
+      }
+      .nav-links {
+        justify-content: center;
+        gap: 1.2rem;
+      }
+      .hero h1 {
+        font-size: 2.3rem;
+      }
+      .hero .tagline {
+        font-size: 1rem;
+      }
+      .section-title {
+        font-size: 1.9rem;
+      }
+      .about-contact-wrap {
+        flex-direction: column;
+      }
+    }
+    @media (max-width: 520px) {
+      .container {
+        padding: 0 1.2rem;
+      }
+      .hero-contact-badge {
+        flex-direction: column;
+        align-items: center;
+        gap: 0.7rem;
+      }
+      .gallery-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- ========== NAVBAR ========== -->
+  <nav class="navbar">
+    <div class="logo-area">
+      <div class="logo-icon">
+        <img src="logo.jpeg" alt="Sri Guru Logo" />
+      </div>
+      <div class="logo-text">Sri Guru</div>
+    </div>
+    <ul class="nav-links">
+      <li><a href="#home" class="active">Home</a></li>
+      <li><a href="#services">Services</a></li>
+      <li><a href="#gallery">Events</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <div class="nav-contact">
+      <i class="fas fa-phone-alt"></i> 9845091914
+    </div>
+  </nav>
+
+  <!-- ========== HERO ========== -->
+  <section id="home" class="hero">
+    <div class="container">
+      <div class="hero-logo">
+        <div class="hero-logo-img">
+          <img src="logo.jpeg" alt="Sri Guru Logo" />
+        </div>
+        <span>SG</span>
+      </div>
+      <h1>Sri Guru Sounds & Lights</h1>
+      <div class="tagline">
+        Ignite every celebration with pro audio & cinematic lighting — weddings, concerts, corporate galas.
+      </div>
+
+      <!-- Service area badge: Mangalore -->
+      <div class="service-area-badge">
+        <i class="fas fa-map-marker-alt"></i> Service available in all over Mangalore
+      </div>
+
+      <div class="hero-contact-badge">
+        <a href="tel:+919845091914"><i class="fas fa-phone-alt"></i> 98450 91914</a>
+        <a href="tel:+916361963058"><i class="fas fa-mobile-alt"></i> 63619 63058</a>
+        <a href="https://youtube.com/@umeshkalladka8717?si=41kC9vMWK-LrIjdX" target="_blank"><i class="fab fa-youtube"></i> YouTube</a>
+      </div>
+      <a href="#contact" class="btn-primary"><i class="fas fa-headset"></i> Get Free Quote</a>
+    </div>
+  </section>
+
+  <!-- ========== SERVICES ========== -->
+  <section id="services">
+    <div class="container">
+      <h2 class="section-title">Our <span>Premium Services</span></h2>
+      <div class="services-grid">
+        <div class="service-card">
+          <i class="fas fa-volume-up"></i>
+          <h3>Pro Sound Systems</h3>
+          <p>Line arrays, subwoofers, monitors – crystal clear audio for any venue.</p>
+        </div>
+        <div class="service-card">
+          <i class="fas fa-lightbulb"></i>
+          <h3>Dynamic Lighting</h3>
+          <p>Moving heads, uplights, lasers & strobes to create magical atmospheres.</p>
+        </div>
+        <div class="service-card">
+          <i class="fas fa-dj"></i>
+          <h3>DJ & AV Control</h3>
+          <p>Professional DJs, visual mixing & LED walls – complete AV solutions.</p>
+        </div>
+        <div class="service-card">
+          <i class="fas fa-calendar-check"></i>
+          <h3>Event Management</h3>
+          <p>End-to-end coordination & on-site tech team for flawless execution.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== GALLERY (EVENT PHOTOS) ========== -->
+  <section id="gallery">
+    <div class="container">
+      <h2 class="section-title">Our <span>Event Gallery</span> | Live Moments</h2>
+      <div class="gallery-grid">
+
+        <!-- EVENT 1 -->
+        <div class="gallery-item">
+          <img src="image1.jpeg" alt="Event 1" />
+          <div class="gallery-caption">
+            <i class="fas fa-camera"></i> Prathibha Puraskara(Shri Rama PU Collage Kalladka)
+          </div>
+        </div>
+
+        <!-- EVENT 2 -->
+        <div class="gallery-item">
+          <img src="image2.jpeg" alt="Event 2" />
+          <div class="gallery-caption">
+            <i class="fas fa-masjid"></i> Eid 
+          </div>
+        </div>
+
+        <!-- EVENT 3 -->
+        <div class="gallery-item">
+          <img src="image3.jpeg" alt="Event 3" />
+          <div class="gallery-caption">
+            <i class="fas fa-lightbulb"></i> Goa
+          </div>
+        </div>
+
+        <!-- EVENT 4 -->
+        <div class="gallery-item">
+          <img src="image4.jpeg" alt="Event 4" />
+          <div class="gallery-caption">
+            <i class="fas fa-dj"></i> Puttur Mahalingehwara Jathre
+          </div>
+        </div>
+
+        <!-- EVENT 5 -->
+        <div class="gallery-item">
+          <img src="image5.jpeg" alt="Event 5" />
+          <div class="gallery-caption">
+            <i class="fas fa-camara"></i> Goa
+          </div>
+        </div>
+
+        <!-- EVENT 6 -->
+        <div class="gallery-item">
+          <img src="image6.jpeg" alt="Event 6" />
+          <div class="gallery-caption">
+            <i class="fas fa-camara"></i> Goa
+          </div>
+        </div>
+
+        <!-- ===== ADD MORE EVENTS BY COPYING THE BLOCK ABOVE ===== -->
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== CONTACT ========== -->
+  <section id="contact">
+    <div class="container">
+      <h2 class="section-title">Get in <span>Touch</span></h2>
+      <div class="about-contact-wrap">
+        <div class="about-text">
+          <h3 style="font-size: 1.8rem; margin-bottom: 1rem;">Let's make your event <span style="color: #f25e2c;">unforgettable</span></h3>
+          <p style="color: #cbd5ff; line-height: 1.6;">
+            With 10+ years of expertise, Sri Guru Sounds and Lights delivers professional audio and lighting solutions across India. From intimate gatherings to large festivals, our team ensures every beat & beam creates magic.
+            <br><br />
+            <i class="fas fa-check-circle" style="color:#f25e2c;"></i> 24/7 technical support <br />
+            <i class="fas fa-check-circle" style="color:#f25e2c;"></i> Customized packages for weddings, corporate events, birthdays & concerts.
+          </p>
+          <!-- Service area in about section -->
+          <div style="margin-top: 1.5rem; background: #12131e; padding: 1rem 1.5rem; border-radius: 60px; display: inline-block; border: 1px solid rgba(242,94,44,0.2);">
+            <i class="fas fa-map-marker-alt" style="color:#f25e2c; margin-right: 10px;"></i>
+            <strong style="color:#ffbc7a;">Serving all over Mangalore & surrounding areas</strong>
+          </div>
+        </div>
+        <div class="contact-card">
+          <h3><i class="fas fa-address-card"></i> Contact Details</h3>
+          <div class="contact-detail">
+            <i class="fas fa-phone-volume"></i>
+            <div>
+              <strong>Call / WhatsApp (Primary)</strong><br />
+              <a href="tel:+919845091914" style="color:#ffaa66; text-decoration:none; font-size:1.1rem;">98450 91914</a>
+            </div>
+          </div>
+          <div class="contact-detail">
+            <i class="fas fa-mobile-alt"></i>
+            <div>
+              <strong>Secondary Contact</strong><br />
+              <a href="tel:+916361963058" style="color:#ffaa66; text-decoration:none;">63619 63058</a>
+            </div>
+          </div>
+          <div class="contact-detail">
+            <i class="fab fa-youtube"></i>
+            <div>
+              <strong>YouTube Channel</strong><br />
+              <a href="https://youtube.com/@umeshkalladka8717?si=41kC9vMWK-LrIjdX" target="_blank" style="color:#ffaa66; text-decoration:none;">@umeshkalladka8717</a>
+            </div>
+          </div>
+          <div class="contact-detail">
+            <i class="fas fa-map-marker-alt"></i>
+            <div>
+              <strong>Office</strong><br />#42, Light & Sound Complex, Electronic City, Bengaluru - 560100
+            </div>
+          </div>
+          <div class="social-links" style="margin-top: 1.2rem;">
+            <a href="https://youtube.com/@umeshkalladka8717?si=41kC9vMWK-LrIjdX" target="_blank"><i class="fab fa-youtube"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-facebook"></i></a>
+            <a href="#"><i class="fab fa-whatsapp"></i></a>
+          </div>
+          <div style="margin-top: 1.8rem; display: flex; gap: 1rem; flex-wrap: wrap;">
+            <a href="tel:+919845091914" class="btn-primary" style="padding: 0.7rem 1.4rem; font-size: 0.9rem; display: inline-flex; align-items: center; gap: 8px;"><i class="fas fa-phone"></i> Call 98450 91914</a>
+            <a href="tel:+916361963058" class="btn-primary" style="padding: 0.7rem 1.4rem; font-size: 0.9rem; background: #2c2e44; box-shadow: none;"><i class="fab fa-whatsapp"></i> Call 63619 63058</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== FOOTER ========== -->
+  <footer class="footer">
+    <div class="container">
+      <p>© 2025 Sri Guru Sounds and Lights | Premium Sound & Lighting Services</p>
+      <p style="margin-top: 0.5rem;">
+        <i class="fas fa-map-marker-alt" style="color:#f25e2c;"></i> Service available in all over Mangalore
+      </p>
+      <p style="margin-top: 0.8rem; display: flex; justify-content: center; gap: 1.8rem; flex-wrap: wrap;">
+        📞 <strong>98450 91914</strong> &nbsp;|&nbsp; 📞 <strong>63619 63058</strong> &nbsp;|&nbsp;
+        <a href="https://youtube.com/@umeshkalladka8717?si=41kC9vMWK-LrIjdX" target="_blank" style="color:#f25e2c;"><i class="fab fa-youtube"></i> YouTube</a>
+      </p>
+      <p style="margin-top: 0.5rem; font-size: 0.8rem;">24/7 event support — Call us for unbeatable sound & light experiences</p>
+    </div>
+  </footer>
+
+  <!-- ========== SCRIPTS ========== -->
+  <script>
+    // Active link highlight on scroll
+    const sections = document.querySelectorAll("section");
+    const navLinks = document.querySelectorAll(".nav-links a");
+
+    window.addEventListener("scroll", () => {
+      let current = "";
+      sections.forEach(section => {
+        const top = section.offsetTop - 100;
+        const height = section.clientHeight;
+        if (window.pageYOffset >= top && window.pageYOffset < top + height) {
+          current = section.getAttribute("id");
+        }
+      });
+      navLinks.forEach(link => {
+        link.classList.remove("active");
+        if (link.getAttribute("href") === `#${current}`) {
+          link.classList.add("active");
+        }
+      });
+      if (window.scrollY < 100) {
+        const homeLink = document.querySelector(".nav-links a[href='#home']");
+        if (homeLink) homeLink.classList.add("active");
+      }
+    });
+
+    // Smooth scroll for nav links
+    document.querySelectorAll(".nav-links a").forEach(anchor => {
+      anchor.addEventListener("click", function(e) {
+        e.preventDefault();
+        const targetId = this.getAttribute("href").substring(1);
+        const target = document.getElementById(targetId);
+        if (target) {
+          target.scrollIntoView({ behavior: "smooth", block: "start" });
+        }
+      });
+    });
+
+    // CTA button scroll
+    const quoteBtn = document.querySelector(".hero .btn-primary");
+    if (quoteBtn) {
+      quoteBtn.addEventListener("click", (e) => {
+        e.preventDefault();
+        document.getElementById("contact").scrollIntoView({ behavior: "smooth" });
+      });
+    }
+  </script>
+</body>
+</html>
